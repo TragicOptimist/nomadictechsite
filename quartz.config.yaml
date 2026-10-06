@@ -7,10 +7,11 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: TragicOptimist.github.io/nomadictechsite
+  baseUrl: nomadictech.space
   ignorePatterns:
     - private
     - templates
+    - attachments/templates
     - .obsidian
   theme:
     fontOrigin: googleFonts
@@ -138,7 +139,7 @@ plugins:
   - source: "@quartz-community/og-image"
     enabled: true
   - source: "@quartz-community/cname"
-    enabled: true
+    enabled: false
   - source: "@quartz-community/canvas-page"
     enabled: true
   - source: "@quartz-community/content-page"
