@@ -1,1 +1,1 @@
-lora esome
+hi i am a CS student interest in Engineering, Finance, Philosophy and Human behavior

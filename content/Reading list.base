@@ -6,7 +6,8 @@ views:
         - file.folder == "attachments/books"
     order:
       - file.name
-      - title
+      - author
+      - Rating
     cardSize: 210
     image: note.Cover
     imageAspectRatio: 1.75

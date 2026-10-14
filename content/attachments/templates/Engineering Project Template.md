@@ -69,4 +69,4 @@ Sketch / block diagram + 3-5 bullet explanation.
 - [ ] Publish as blog: [[ ]]
 
 ---
-*Started on <% tp.date.now("MMMM D, YYYY") %>*
+

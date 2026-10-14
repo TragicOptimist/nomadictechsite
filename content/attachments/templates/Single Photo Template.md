@@ -39,4 +39,4 @@ What happened here? 2-3 lines. Memory, feeling, context not visible in the frame
 - Tags: #photo
 
 ---
-*Captured on <% tp.date.now("MMMM D, YYYY") %>*
+

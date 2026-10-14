@@ -1,0 +1,11 @@
+views:
+  - type: cards
+    name: View
+    filters:
+      and:
+        - file.folder == "attachments/Photos"
+    order: []
+    image: note.Cover
+    cardSize: 240
+    imageAspectRatio: 0.75
+    imageFit: contain

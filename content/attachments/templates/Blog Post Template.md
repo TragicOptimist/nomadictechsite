@@ -19,17 +19,7 @@ cssclasses: []
 ![cover|banner](cover-image.png)
 *Cover caption / credit*
 
-## Context
-- **Status:** 🟡 Draft / 🟢 Published
-- **Created:** <% tp.date.now("YYYY-MM-DD HH:mm") %>
-- **Audience:** Who is this for?
-- **Goal:** What should reader learn/do after reading?
 
-## Outline
-- [ ] Hook
-- [ ] Main point 1
-- [ ] Main point 2
-- [ ] Conclusion + CTA
 
 ---
 
@@ -76,20 +66,4 @@ Next: [[Next Post Title]]
 
 ---
 
-## Publish Checklist
-- [ ] Title < 60 chars, clear benefit
-- [ ] `description` filled (150-160 chars for SEO)
-- [ ] `tags` cleaned (remove `draft`, add 2-4 specific tags)
-- [ ] `draft: false` when ready to publish in Quartz
-- [ ] `date` updated to publish date
-- [ ] Links checked: [[internal links]] work
-- [ ] Images in `attachments/` and embedded correctly
-- [ ] Proofread / read aloud
 
-## Related
--/-
-- Links:
-- Sources:
-
----
-*Written on <% tp.date.now("MMMM D, YYYY") %> in Obsidian. Published with Quartz.*

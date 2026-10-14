@@ -1,3 +1,0 @@
-
-
-![[capitalism-world.jpg]]
