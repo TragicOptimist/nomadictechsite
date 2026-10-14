@@ -1,6 +1,6 @@
 ---
 title: The Road Not taken
-description: One-line theme / what this poem is about - change me
+description:
 date: 2026-10-07
 tags:
   - poem
@@ -11,7 +11,7 @@ collection: Ink & Echoes
 draft: fase
 aliases:
   - The road
-  - life choices 
+  - life choices
 cssclasses:
   - poem
 ---
@@ -46,9 +46,4 @@ cssclasses:
 >  
 
 
----
-## Notes
-
-
----
 

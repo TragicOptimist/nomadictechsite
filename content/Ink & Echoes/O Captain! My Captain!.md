@@ -1,6 +1,6 @@
 ---
 title: O Captain! My Captain!
-description: One-line theme / what this poem is about - change me
+description:
 date: 2026-10-09
 tags:
   - poem
@@ -49,7 +49,3 @@ From fearful trip the victor ship comes in with object won;
 
 
 
-
----
-
-?
