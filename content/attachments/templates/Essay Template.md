@@ -1,25 +1,25 @@
 ---
-title: "<% tp.file.title %>"
+title: "Thought max"
 description: "One-line thesis / summary for Quartz / SEO - change me"
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: 2026-10-22
 tags:
   - essay
   - draft
 collection: "Ink & Echoes"
 draft: true
 aliases:
-  - "<% tp.file.title %>"
+  - "Thought max"
 cssclasses: []
 ---
 
-# <% tp.file.title %>
+# Thought max
 
 > [!tldr] Thesis
 > One sentence: what do you believe, and why should the reader care?
 
 ## Context
 - **Status:** 🟡 Draft / 🟢 Published
-- **Created:** <% tp.date.now("YYYY-MM-DD HH:mm") %>
+- **Created:** 2026-10-22 06:25
 - **Audience:** Who is this for?
 - **Question:** What question is this essay answering?
 - **Collection:** [[Ink & Echoes]]

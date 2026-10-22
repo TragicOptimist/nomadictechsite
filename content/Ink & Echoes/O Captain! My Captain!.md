@@ -1,10 +1,9 @@
 ---
 title: O Captain! My Captain!
-description:
+description: "Walt Whitman's 1865 elegy for Abraham Lincoln."
 date: 2026-10-09
 tags:
   - poem
-  - draft
 form: ""
 mood: ""
 collection: Ink & Echoes
@@ -15,7 +14,7 @@ cssclasses:
 
 # O Captain! My Captain!
 
-> [!pome] Pome
+> [!poem] Poem
 > O Captain! my Captain! our fearful trip is done,  
 The ship has weather’d every rack, the prize we sought is won,  
 The port is near, the bells I hear, the people all exulting,  

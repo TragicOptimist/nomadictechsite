@@ -1,6 +1,6 @@
 ---
 title: Regret of not doing
-description:
+description: "H. Jackson Brown Jr. on regretting the things we never tried."
 date: 2026-10-08
 tags:
   - quote

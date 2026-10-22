@@ -3,9 +3,9 @@ views:
     name: View
     filters:
       and:
-        - file.folder == "attachments/Photos"
+        - file.folder == "attachments/photos/photo-info"
     order: []
-    image: note.Cover
+    image: note.coverImage
     cardSize: 240
     imageAspectRatio: 0.75
     imageFit: contain

@@ -1,14 +1,13 @@
 ---
-title: The Road Not taken
-description:
+title: The Road Not Taken
+description: "Robert Frost's 1916 poem about two diverging paths and the choice we make."
+author: Robert Frost
 date: 2026-10-07
 tags:
   - poem
-  - fav
 form: ""
 mood: ""
 collection: Ink & Echoes
-draft: fase
 aliases:
   - The road
   - life choices
@@ -17,7 +16,7 @@ cssclasses:
 ---
 # The Road Not Taken 
 
-![[CrossRoad@1.jpg]]
+![A dirt path splitting into two trails through a green forest](CrossRoad@1.jpg)
 
 > [!poem]
 > Two roads diverged in a yellow wood,

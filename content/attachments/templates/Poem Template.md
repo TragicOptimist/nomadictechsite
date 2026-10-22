@@ -1,18 +1,15 @@
 ---
-title: <% tp.file.title %>
+title: Thought max
 description: One-line theme / what this poem is about - change me
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: 2026-10-22
 tags:
   - poem
-  - draft
 form: ""
 mood: ""
 collection: Ink & Echoes
-aliases:
-  - <% tp.file.title %>
 ---
 
-# <% tp.file.title %>
+# Thought max
 
 > *Epigraph or dedication — optional, delete if not needed*
 > — Author, *Source*

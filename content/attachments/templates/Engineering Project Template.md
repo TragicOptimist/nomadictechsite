@@ -1,21 +1,21 @@
 ---
-title: "<% tp.file.title %>"
+title: "Thought max"
 description: "One-line what it does"
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: 2026-10-22
 tags:
   - project
 status: tinkering # idea / tinkering / building / done / archived
 tech: []
-started: <% tp.date.now("YYYY-MM-DD") %>
-updated: <% tp.date.now("YYYY-MM-DD") %>
+started: 2026-10-22
+updated: 2026-10-22
 repo: ""
 demo: ""
 draft: false
 aliases:
-  - "<% tp.file.title %>"
+  - "Thought max"
 ---
 
-# <% tp.file.title %>
+# Thought max
 
 > [!idea] Goal
 > What are you building and why? One paragraph.
@@ -25,7 +25,7 @@ aliases:
 
 ## Details
 - **Status:** idea / tinkering / building / done / archived
-- **Started:** <% tp.date.now("YYYY-MM-DD") %>
+- **Started:** 2026-10-22
 - **Stack / Parts:** Arduino, ESP32, PLA, etc.
 - **Repo:** [github](url)
 - **Demo:** [link](url)
@@ -37,7 +37,7 @@ Sketch / block diagram + 3-5 bullet explanation.
 - Output ->
 
 ## Build log
-### <% tp.date.now("YYYY-MM-DD") %> — Started
+### 2026-10-22 — Started
 - What I tried:
 - What worked / broke:
 

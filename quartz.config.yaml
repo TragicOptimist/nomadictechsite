@@ -218,11 +218,12 @@ plugins:
       position: afterBody
       priority: 10
   - source: "@quartz-community/footer"
-    enabled: false
+    enabled: true
     options:
       links:
         GitHub: https://github.com/TragicOptimist
-        Discord Community: 
+        Email: mailto:NomadicTechnotes@proton.me
+        RSS: /index.xml
     layout:
       position: footer
       priority: 50

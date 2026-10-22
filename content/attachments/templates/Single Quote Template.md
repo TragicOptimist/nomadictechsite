@@ -1,16 +1,16 @@
 ---
-title: <% tp.file.title %>
+title: Thought max
 description:
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: 2026-10-22
 tags:
   - quote
 author: ""
 source: ""
 page: ""
 aliases:
-  - <% tp.file.title %>
+  - Thought max
 ---
-# <% tp.file.title %>
+# Thought max
 # Single Quote Template
 
 > [!quote] Quote

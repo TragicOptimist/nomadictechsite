@@ -1,17 +1,17 @@
 ---
-title: "<% tp.file.title %>"
+title: "Thought max"
 description: "One-line summary for Quartz / SEO - change me"
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: 2026-10-22
 tags:
   - blog
   - draft
 aliases:
-  - "<% tp.file.title %>"
+  - "Thought max"
 draft: true
 cssclasses: []
 ---
 
-# <% tp.file.title %>
+# Thought max
 
 > [!tldr] TL;DR
 > Write 1-2 sentences: what is this post about and why should I read it?

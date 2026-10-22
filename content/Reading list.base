@@ -3,11 +3,11 @@ views:
     name: books
     filters:
       and:
-        - file.folder == "attachments/books"
+        - file.folder == "attachments/library"
     order:
       - file.name
       - author
-      - Rating
+      - rating
     cardSize: 210
-    image: note.Cover
+    image: note.coverImage
     imageAspectRatio: 1.75

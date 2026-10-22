@@ -1,7 +1,7 @@
 ---
-title: <% tp.file.title %>
+title: Thought max
 description: One-line fact summary
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: 2026-10-22
 tags:
   - fact
 domain: ""
@@ -11,11 +11,11 @@ confidence: medium
 verified: false
 draft: false
 aliases:
-  - <% tp.file.title %>
+  - Thought max
 location:
 ---
 
-# <% tp.file.title %>
+# Thought max
 
 > [!fact] Fact
 > State the ONE fact here in a single clear sentence.

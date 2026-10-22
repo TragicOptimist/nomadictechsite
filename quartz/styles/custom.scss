@@ -1,3 +1,316 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// ---------------------------------------------------------------------------
+// Custom callouts
+//
+// Quartz only ships the Obsidian default callout types, so the note types used
+// on this site (poem, speech, tldr) fall back to a generic blue note. These
+// styles give each one a distinct role while staying in the site palette.
+// ---------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------
+// Homepage layout (content/index.md) — three-column: pages / latest / misc.
+// ---------------------------------------------------------------------------
+
+.center:has(article.homepage) {
+  // The properties footer adds nothing on the homepage.
+  .note-properties {
+    display: none;
+  }
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr) 16rem;
+  gap: 2.75rem;
+  align-items: start;
+  margin: 0.5rem 0 1rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+}
+
+.home-eyebrow {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: $semiBoldWeight;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--gray);
+}
+
+.home-section {
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Pages directory.
+.home-pages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  & > li {
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--lightgray);
+    font-size: 0.95rem;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    & > a {
+      font-weight: inherit;
+    }
+  }
+
+  .soon {
+    color: var(--gray);
+
+    .soon-label {
+      font-size: 0.72rem;
+      opacity: 0.8;
+    }
+
+    a {
+      color: var(--gray);
+    }
+  }
+}
+
+// Intro copy.
+.home-intro {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0 0 2rem;
+}
+
+.home-empty {
+  font-style: italic;
+  color: var(--gray);
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+// Featured books.
+.home-books {
+  list-style: none;
+  counter-reset: home-book;
+  margin: 0 0 0.75rem;
+  padding: 0;
+
+  & > li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0.65rem 0 0.65rem 2.4rem;
+    border-bottom: 1px solid var(--lightgray);
+
+    &:first-child {
+      border-top: 1px solid var(--lightgray);
+    }
+
+    &::before {
+      counter-increment: home-book;
+      content: "0" counter(home-book);
+      position: absolute;
+      left: 0;
+      top: 0.7rem;
+      font-family: var(--codeFont);
+      font-size: 0.72rem;
+      color: var(--tertiary);
+    }
+
+    & > a {
+      font-weight: $semiBoldWeight;
+    }
+
+    .book-author {
+      font-size: 0.82rem;
+      color: var(--gray);
+    }
+  }
+}
+
+.home-more {
+  font-size: 0.85rem;
+  color: var(--secondary);
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  .home-photo-cap & {
+    color: var(--gray);
+  }
+}
+
+// Random quote card.
+.home-quote {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 5px;
+
+  .home-quote-text {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+    font-style: italic;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    margin: 0 0 0.6rem;
+  }
+
+  .home-quote-author {
+    font-family: var(--bodyFont);
+    font-size: 0.82rem;
+    color: var(--gray);
+    margin: 0;
+  }
+}
+
+// Random photo card.
+.home-photo {
+  margin: 0;
+
+  & > a {
+    display: block;
+    border: 1px solid var(--lightgray);
+    border-radius: 5px;
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      margin: 0;
+      border-radius: 0;
+    }
+  }
+
+  .home-photo-cap {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+}
+
+.callout {
+  --callout-icon-poem: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></svg>');
+  --callout-icon-speech: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>');
+  --callout-icon-tldr: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>');
+
+  // Poetry: a quiet, book-like block rather than an alert box.
+  &[data-callout="poem"] {
+    --color: var(--secondary);
+    --border: transparent;
+    --bg: transparent;
+    --callout-icon: var(--callout-icon-poem);
+
+    border: none;
+    border-left: 2px solid var(--tertiary);
+    border-radius: 0;
+    background: transparent;
+    padding-left: 1.25rem;
+    padding-right: 0.25rem;
+
+    & > .callout-title {
+      padding-bottom: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+
+      .callout-title-inner {
+        font-size: 0.72rem;
+        font-weight: $semiBoldWeight;
+        opacity: 0.7;
+      }
+    }
+
+    & > .callout-content {
+      font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+      font-size: 1.04rem;
+      line-height: 1.85;
+
+      & > p {
+        margin: 0.35rem 0;
+      }
+    }
+  }
+
+  // Quotes: editorial, with the author line kept readable.
+  &[data-callout="quote"] {
+    --color: var(--secondary);
+    --border: transparent;
+
+    border: none;
+    border-left: 3px solid var(--tertiary);
+    border-radius: 0;
+    background: transparent;
+    padding-left: 1.5rem;
+    padding-right: 0.25rem;
+
+    & > .callout-title {
+      display: none;
+    }
+
+    & > .callout-content {
+      font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+      font-size: 1.1rem;
+      line-height: 1.7;
+
+      & > p {
+        margin: 0.4rem 0;
+      }
+
+      & > p:first-child {
+        font-style: italic;
+      }
+
+      & > p:last-child {
+        font-family: var(--bodyFont);
+        font-size: 0.85rem;
+        font-style: normal;
+        color: var(--gray);
+        margin-top: 0.75rem;
+      }
+    }
+  }
+
+  // Speeches: long-form, with a clear header rule.
+  &[data-callout="speech"] {
+    --color: var(--secondary);
+    --border: var(--lightgray);
+    --bg: var(--highlight);
+    --callout-icon: var(--callout-icon-speech);
+
+    & > .callout-title {
+      border-bottom: 1px solid var(--lightgray);
+      padding-bottom: 0.6rem;
+      margin-bottom: 0.25rem;
+    }
+
+    & > .callout-content {
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+  }
+
+  // TL;DR blocks used in note templates.
+  &[data-callout="tldr"] {
+    --color: var(--secondary);
+    --border: var(--tertiary);
+    --bg: var(--highlight);
+    --callout-icon: var(--callout-icon-tldr);
+
+    & > .callout-content {
+      font-size: 0.98rem;
+    }
+  }
+}

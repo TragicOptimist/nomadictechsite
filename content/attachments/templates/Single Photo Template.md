@@ -1,25 +1,25 @@
 ---
-title: "<% tp.file.title %>"
+title: "Thought max"
 description: "One-line photo caption"
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: 2026-10-22
 tags:
   - photo
 location: ""
-taken: <% tp.date.now("YYYY-MM-DD") %>
+taken: 2026-10-22
 camera: ""
 photographer: ""
 draft: false
 aliases:
-  - "<% tp.file.title %>"
+  - "Thought max"
 ---
 
-# <% tp.file.title %>
+# Thought max
 
 ![[photo.jpg]]
 *Caption — where, what, why this moment*
 
 ## Details
-- **Taken:** <% tp.date.now("YYYY-MM-DD") %>
+- **Taken:** 2026-10-22
 - **Location:** City, Country
 - **Camera:** 
 - **Photographer:**
