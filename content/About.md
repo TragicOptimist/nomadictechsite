@@ -1,7 +1,6 @@
 ---
 title: About
-description: "A CS student writing about engineering, finance, philosophy, and human behavior."
+description: "A CS student exploring engineering, finance, philosophy, and human behavior."
 ---
 
-hi i am a CS student interest in Engineering, Finance, Philosophy and Human behavior.
-you can contact me through :- NomadicTechnotes@proton.me
+I'm a CS student interested in engineering, finance, philosophy, and human behavior. This website is my personal space to share what I'm learning, reading, thinking about, and building. For any further information or to get in touch, feel free to email me at [NomadicTechnotes@proton.me](mailto:NomadicTechnotes@proton.me).
